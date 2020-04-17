@@ -8,4 +8,5 @@ A server that crawls a specified website and broadcasts the information to users
 DB_URI=your_mongodb_uri
 SAKIMOTO_TOKEN=your_telegram_bot_token
 ```
-2. Run `go build` to generate an executable file.
+2. Run `go mod download` to download all the dependencies.
+3. Run `go build` to generate an executable file.
