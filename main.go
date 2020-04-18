@@ -47,7 +47,6 @@ func botListen() {
 	}
 
 	for update := range updates {
-		fmt.Println("Command in")
 		if update.Message.IsCommand() {
 			if update.Message.Command() == "start" {
 				chatID := update.Message.Chat.ID
