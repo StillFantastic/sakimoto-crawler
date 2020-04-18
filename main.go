@@ -85,6 +85,7 @@ func main() {
 	for true {
 		if err := chromedp.Run(ctx,
 			chromedp.Navigate(URL),
+			chromedp.Sleep(5*time.Second),
 			chromedp.InnerHTML("#book-now-content", &bookContent),
 		); err != nil {
 			fmt.Println(err)
